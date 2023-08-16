@@ -25,9 +25,10 @@ const Home = () => {
         <motion.h1 variants={fadeIn('down', 0.2)} initial="hidden" animate="show" exit="hidden" className="h1">Transforming Ideas <br /> Into <span className="text-accent">Digital Reality</span> </motion.h1>
         {/*Subtitulo*/}
         <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-        Hello! I'm [Elievelton], graduated in Information Systems from the Federal University of Piauí (UFPI) in April 2022. Throughout my academic and professional journey, I've honed expertise in several cutting-edge languages and technologies, positioning myself uniquely in the IT market.
+        
+        Hello! I'm Elievelton, graduated in Information Systems from the Federal University of Piauí (UFPI) in April 2022. Throughout my academic and professional journey, I've honed expertise in several cutting-edge languages and technologies, positioning myself uniquely in the IT market.
 
-Welcome to my portfolio, and I invite you to explore more about the projects I'm proud to have been a part of!
+        Welcome to my portfolio, and I invite you to explore more about the projects I'm proud to have been a part of!
 
         </motion.p>
         {/*btn*/}
