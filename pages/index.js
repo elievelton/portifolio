@@ -25,10 +25,10 @@ const Home = () => {
         <motion.h1 variants={fadeIn('down', 0.2)} initial="hidden" animate="show" exit="hidden" className="h1">Transforming Ideas <br /> Into <span className="text-accent">Digital Reality</span> </motion.h1>
         {/*Subtitulo*/}
         <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa egestas mollis varius;
-          dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare.
-          Hendrerit parturient habitant pharetra rutrum gravida porttitor eros feugiat. Mollis elit
-          sodales taciti duis praesent id. Consequat urna vitae morbi nunc congue.
+        Hello! I'm [Elievelton], graduated in Information Systems from the Federal University of Piauí (UFPI) in April 2022. Throughout my academic and professional journey, I've honed expertise in several cutting-edge languages and technologies, positioning myself uniquely in the IT market.
+
+Welcome to my portfolio, and I invite you to explore more about the projects I'm proud to have been a part of!
+
         </motion.p>
         {/*btn*/}
         <div className="flex justify-center xl:hidden relative">
@@ -47,6 +47,10 @@ const Home = () => {
       <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 ">
 
       </div>
+      {/*particles*/}
+      <div><ParticlesContainer/></div>
+      {/*Avatar img*/}
+      <motion.div variants={fadeIn('up', 0.6)} initial="hidden" animate="show"  exit="hidden" transition={{duration:1, ease:'easeInOut'}} className="w-full h-full max-w-[750px] max-h-[1125px] absolute -bottom-32 lg:bottom-0 lg:right-[5%]" ><Avatar/></motion.div>
     </div>
 
   </div>;
