@@ -1,11 +1,11 @@
 import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from 'react-icons/fa';
-
 import React, { useState } from 'react';
 
 
 //  data
 const aboutData = [
+  
   {
     title: 'skills',
     info: [
@@ -129,7 +129,7 @@ const About = () => {
                 */}
             With a passion for problem-solving and an unwavering appreciation for technology, I am here to make a difference. Every project I undertake is a testament to my dedication and commitment to excellence. For me, programming is not just a skill, it's a calling.
 
-            I am always on the lookout for opportunities to collaborate, innovate, and learn. If you're seeking someone who brings enthusiasm, technical know-how, and an unyielding drive to overcome challenges, I'm at your service!
+            I am always on the lookout for opportunities to collaborate, innovate, and learn. If you're seeking someone who brings enthusiasm, technical know-how, and an unyielding drive to overcome challenges, Im at your service!
 
             Shall we turn ideas into reality together?
           </motion.p>
@@ -189,8 +189,8 @@ const About = () => {
                 <div>{item.stage}</div>
                 {/*icon*/}
                 <div className='flex gap-x-4'>
-                  {item.icons && item.icons.map((icon, itemIndex) => {
-                    return <div key={itemIndex} className='text-2xl text-white/100'>{icon}</div>;
+                  {item.icons && item.icons.map((icon, iconIndex) => {
+                    return <div key={iconIndex} className='text-2xl text-white/100'>{icon}</div>;
                   })}
                 </div>
               </div>
