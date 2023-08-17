@@ -1,9 +1,6 @@
 // next image
 import Image from "next/image"
 
-
-
-
 // components
 
 import ParticlesContainer from '../components/ParticlesContainer'
@@ -26,16 +23,16 @@ const Home = () => {
         {/*Subtitulo*/}
         <motion.p variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
         
-        Hello! I'm Elievelton, graduated in Information Systems from the Federal University of Piauí (UFPI) in April 2022. Throughout my academic and professional journey, I've honed expertise in several cutting-edge languages and technologies, positioning myself uniquely in the IT market.
+        Hello! I am Elievelton, graduated in Information Systems from the Federal University of Piauí (UFPI) in April 2022. Throughout my academic and professional journey, I have honed expertise in several cutting-edge languages and technologies, positioning myself uniquely in the IT market.
 
-        Welcome to my portfolio, and I invite you to explore more about the projects I'm proud to have been a part of!
+        Welcome to my portfolio, and I invite you to explore more about the projects I am proud to have been a part of!
 
         </motion.p>
         {/*btn*/}
-        <div className="flex justify-center xl:hidden relative">
+        <div className="flex justify-center xl:hidden relative z-10">
           <ProjectsBtn />
         </div>
-        <motion.div variants={fadeIn('down', 0.4)} initial="hidden" animate="show" exit="hidden" className="hidden xl:flex">
+        <motion.div variants={fadeIn('down', 0.4)} initial="hidden" animate="show" exit="hidden" className="hidden xl:flex z-10">
           <ProjectsBtn />
         </motion.div>
       </div>
@@ -43,7 +40,7 @@ const Home = () => {
 
 
     {/*img*/}
-    <div className=" w-[1200px] h-full absolute right-8 bottom-0">
+    <div className=" w-[1200px] h-full absolute right-8 bottom-0" >
       {/*bg img*/}
       <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 ">
 
@@ -51,7 +48,7 @@ const Home = () => {
       {/*particles*/}
       <div><ParticlesContainer/></div>
       {/*Avatar img*/}
-      <motion.div variants={fadeIn('up', 0.6)} initial="hidden" animate="show"  exit="hidden" transition={{duration:1, ease:'easeInOut'}} className="w-full h-full max-w-[750px] max-h-[1125px] absolute -bottom-32 lg:bottom-0 lg:right-[5%]" ><Avatar/></motion.div>
+      <motion.div variants={fadeIn('up', 0.6)} initial="hidden" animate="show"  exit="hidden" transition={{duration:1, ease:'easeInOut'}} className="w-full h-full max-w-[600px] max-h-[889px] absolute -bottom-32 lg:bottom-0 lg:right-[5%] " ><Avatar/></motion.div>
     </div>
 
   </div>;
