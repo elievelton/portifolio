@@ -1,4 +1,6 @@
 import '../styles/globals.css';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 //components
 import Layout from '../components/Layout';
