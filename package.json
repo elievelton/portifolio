@@ -11,6 +11,7 @@
   "dependencies": {
     "@next/font": "^13.4.4",
     "emailjs-com": "^3.2.0",
+    "firebase": "^10.2.0",
     "framer-motion": "^10.12.16",
     "lorem-ipsum": "^2.0.8",
     "next": "13.4.3",

@@ -2,6 +2,9 @@
 import Image from "next/image"
 import Head from 'next/head';
 
+import { useEffect, useState } from 'react';
+import { incrementVisitCount } from '../lib/visits';
+
 // components
 
 import ParticlesContainer from '../components/ParticlesContainer'
@@ -14,7 +17,27 @@ import { motion } from 'framer-motion'
 
 // variante
 import { fadeIn } from '../variants';
+
+
 const Home = () => {
+
+  const [visitCount, setVisitCount] = useState(null);
+
+  useEffect(() => {
+    async function handleVisit() {
+      try {
+        // Incrementa a contagem de visitas
+        const newCount = await incrementVisitCount();
+        setVisitCount(newCount);
+      } catch (error) {
+        console.error("Error incrementing visit count:", error);
+      }
+    }
+    
+    handleVisit();
+  }, []);
+  
+
   return (
             <>
             {/*config SEO*/}
@@ -62,7 +85,9 @@ const Home = () => {
           {/*Avatar img*/}
           <motion.div variants={fadeIn('up', 0.6)} initial="hidden" animate="show" exit="hidden" transition={{ duration: 1, ease: 'easeInOut' }} className="w-full h-full max-w-[600px] max-h-[889px] absolute -bottom-32 lg:bottom-0 lg:right-[5%] " ><Avatar /></motion.div>
         </div>
-
+        <div className="">
+        {visitCount !== null ? `Total Visits: ${visitCount}` : 'Loading visits...'}
+      </div>
       </div>;
       </>
       );
