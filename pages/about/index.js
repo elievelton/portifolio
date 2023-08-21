@@ -98,7 +98,7 @@ const About = () => {
         <link rel="canonical" href="https://elievelton.dev/" />
         <link rel="alternate" hreflang="en-US" href="https://elievelton.dev/" />
       </Head>
-      <div className='h-full bg-primary/30 py-32 text-center xl:text-left relative'> {/* Aqui adicionamos 'relative' */}
+      <div className='h-full bg-primary/30 py-32 text-center xl:text-left relative '> {/* Aqui adicionamos 'relative' */}
         <Circles />
         {/* avatar img */}
         <motion.div
@@ -140,9 +140,7 @@ const About = () => {
                 */}
               With a passion for problem-solving and an unwavering appreciation for technology, I am here to make a difference. Every project I undertake is a testament to my dedication and commitment to excellence. For me, programming is not just a skill, It&apos;s a calling.
 
-              I am always on the lookout for opportunities to collaborate, innovate, and learn. If You&apos;re seeking someone who brings enthusiasm, technical know-how, and an unyielding drive to overcome challenges, Im at your service!
-
-              Shall we turn ideas into reality together?
+              I am always on the lookout for opportunities to collaborate, innovate, and learn.
             </motion.p>
             {/*counters*/}
             <motion.div variants={fadeIn('right', 0.6)}
@@ -184,7 +182,7 @@ const About = () => {
           <motion.div variants={fadeIn('left', 0.4)}
             initial='hidden'
             animate='show'
-            exit='hidden' className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
+            exit='hidden' className='flex flex-col w-full xl:max-w-[48%] h-[480px] '>
             <div className=' flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
               {aboutData.map((item, itemIndex) => {
                 return (<div key={itemIndex} className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} onClick={() => setIndex(itemIndex)} >{item.title}</div>
