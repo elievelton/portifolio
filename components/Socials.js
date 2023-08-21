@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 //incons
-import { RiYoutubeLine, RiInstagramLine, RiLinkedinLine, RiFacebookBoxLine, RiTiktokLine } from 'react-icons/ri';
+import { RiYoutubeLine, RiInstagramLine, RiLinkedinLine, RiFacebookBoxLine, RiTiktokLine, RiGithubFill } from 'react-icons/ri';
 
 const Socials = () => {
   return (
@@ -21,6 +21,9 @@ const Socials = () => {
       </Link>
       <Link href={''} className=' hover:text-accent transition-all duration-300'>
         <RiTiktokLine />
+      </Link>
+      <Link href={''} className=' hover:text-accent transition-all duration-300'>
+        <RiGithubFill />
       </Link>
     </div>
 
