@@ -24,27 +24,27 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Crafting visual identities that capture the essence and values of your brand, ensuring you stand out in the market.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Developing intuitive and visually appealing design solutions that enhance user experience and capture audience attention.',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Utilizing cutting-edge technologies to create functional, efficient, and adaptable websites and applications tailored to your specific needs.',
   },
   {
     icon: <RxReader />,
     title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Producing authentic and engaging content that speaks directly to your target audience, establishing your brand as a trusted voice in the industry.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Optimizing your website to ensure it achieves the highest rankings on search engines, boosting your visibility and organic traffic.',
   },
 ];
 

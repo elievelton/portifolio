@@ -1,11 +1,11 @@
 import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from 'react-icons/fa';
 import React, { useState } from 'react';
-
+import Head from 'next/head';
 
 //  data
 const aboutData = [
-  
+
   {
     title: 'skills',
     info: [
@@ -87,6 +87,14 @@ const About = () => {
 
   console.log(index)
   return (
+    <>
+    <Head>
+    <title>About-Elievelton - Skill, Awards, Experience, credentials</title>
+    <meta name="description" content="In a world shaped by zeros and ones, creativity is the true superpower" />
+    <meta name="keywords" content="Elievelton, developer, programmer, Dev, Skill, Awards, Experience, credentials" />
+        <link rel="canonical" href="https://elievelton.dev/" />
+        <link rel="alternate" hreflang="en-US" href="https://elievelton.dev/" />
+  </Head>
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left relative'> {/* Aqui adicionamos 'relative' */}
       <Circles />
       {/* avatar img */}
@@ -200,6 +208,7 @@ const About = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

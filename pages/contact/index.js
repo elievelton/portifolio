@@ -5,6 +5,7 @@ import { BsArrowRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import { toast, ToastContainer } from 'react-toastify';
+import Head from 'next/head';
 
 const Contact = () => {
   //Trabalhando os dados usando o emailjs
@@ -66,6 +67,14 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <Head>
+    <title>Contact-Elievelton - Questions? Contact Me!</title>
+    <meta name="description" content="Every great collaboration starts with a simple message. Reach out today, and let's create something amazing together." />
+    <meta name="keywords" content="Elievelton, contact" />
+        <link rel="canonical" href="https://elievelton.dev/" />
+        <link rel="alternate" hreflang="en-US" href="https://elievelton.dev/" />
+  </Head>
     <div className='h-full bg-primary/30'>
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         <div className='flex flex-col w-full max-w-[700px]'>
@@ -99,6 +108,7 @@ const Contact = () => {
         theme="colored"
       /> {/* Container para renderizar os toasts */}
     </div>
+    </>
   );
 };
 
