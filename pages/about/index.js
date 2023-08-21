@@ -1,5 +1,5 @@
 import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma,FaPython, FaNodeJs } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma,FaPython, FaNodeJs, FaGithub } from 'react-icons/fa';
 import React, { useState } from 'react';
 import Head from 'next/head';
 
@@ -21,6 +21,7 @@ const aboutData = [
           FaWordpress,
           FaPython,
           FaNodeJs,
+          FaGithub,
         ],
       },
       {
