@@ -33,7 +33,7 @@ const Services = () => {
       
           </motion.p>
           <motion.p variants={fadeIn('up', 0.4)} initial="hidden" animate="show" exit="hidden" className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-          My mission is to provide holistic digital solutions that drive your business growth and success. Let's work together and turn your ideas into impressive achievements!
+          My mission is to provide holistic digital solutions that drive your business growth and success. Let&apos;s work together and turn your ideas into impressive achievements!
           </motion.p>
         </div>
         {/*slider*/}
